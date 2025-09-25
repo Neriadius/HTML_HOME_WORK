@@ -55,6 +55,10 @@ body {
     margin-top: 10px;
 }
 
+.content :hover {
+    background-color: #7c4a4a;
+}
+
 .footer {
     position: fixed;
     bottom: 0;
