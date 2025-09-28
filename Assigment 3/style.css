@@ -1,0 +1,250 @@
+.navbar {
+  display: flex;              
+  justify-content: space-between; 
+  align-items: center;        
+  padding: 10px 20px;
+  background-color: #a40000;
+  color: white;
+}
+
+.logo img {
+    width: 100px;
+  height: auto;
+}
+
+.navLinks {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    gap: 10px;
+  padding: 10px;
+}
+
+.navLinks a {
+   display: block;
+  padding: 8px 15px;
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 6px;
+  transition: all 0.3s; 
+}
+
+.navLinks a:hover {
+    background-color: white;
+  color: #bf0202; 
+}
+
+.cardRow {
+    display: flex;
+    gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.card {
+    background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 200px;
+  height: auto
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #a40000;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #380000;
+  color: rgb(255, 255, 255);
+}
+
+/*  second task  */
+
+.containeer {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+  grid-template-rows: 80px 1fr 80px;
+    grid-template-areas:
+    "header header"
+    "sideBar content"
+    "footer footer";
+  height: 100vh;
+}
+
+.header {
+     grid-area: header;
+  background: #a40000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sideBar {
+     grid-area: sideBar;
+  background: #ddd;
+  padding: 20px;
+}
+
+.sideBar a {
+    display: block;
+  padding: 8px 15px;
+  color: white;
+  text-decoration: none;
+  border: 2px solid rgb(45, 45, 45);
+  border-radius: 6px;
+  transition: all 0.3s; 
+}
+
+.content {
+    grid-area: content;
+    background: #f4f4f4;
+  padding: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.imgBox {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.imgBox img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.imgBox:hover img {
+  transform: scale(1.1);
+}
+
+.imgBox span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  text-align: center;
+  padding: 8px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.imgBox:hover span {
+  opacity: 1;
+}
+
+/*  Task 3  */
+
+.containeer3 {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+  grid-template-rows: 80px 1fr 80px;
+    grid-template-areas:
+    "header header"
+    "content sideBar"
+    "footer footer";
+  height: 100vh;
+}
+
+.header3 {
+  grid-area: header;
+  display: flex;              
+  justify-content: space-between; 
+  align-items: center;        
+  padding: 10px 20px;
+  background-color: #a40000;
+  color: white;
+}
+
+.sideBar3 {
+  grid-area: sideBar;
+    background: #ddd;
+  padding: 20px;
+}
+
+.sideBar3 a {
+    display: block;
+  padding: 8px 15px;
+  color: rgb(135, 5, 5);
+  text-decoration: none;
+  border: 2px solid rgb(45, 45, 45);
+  border-radius: 6px;
+  transition: all 0.3s; 
+}
+
+.content3 {
+  grid-area: content;
+  background: #d3d3d3;
+  padding: 20px;
+}
+
+.cardRow3 {
+    display: flex;
+    gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.card3 {
+    background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card3 img {
+    width: 200px;
+  height: auto
+}
+
+.card3 button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #a40000;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card3 button:hover {
+  background-color: #380000;
+  color: rgb(255, 255, 255);
+}
