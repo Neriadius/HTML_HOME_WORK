@@ -197,13 +197,14 @@
 }
 
 .sideBar3 a {
-    display: block;
+  display: block;
   padding: 8px 15px;
   color: rgb(135, 5, 5);
   text-decoration: none;
   border: 2px solid rgb(45, 45, 45);
   border-radius: 6px;
   transition: all 0.3s; 
+  gap: 10px;
 }
 
 .content3 {
