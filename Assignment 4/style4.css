@@ -1,0 +1,140 @@
+/* General reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #e0e0e0;
+}
+
+/* Header styles */
+.header {
+  background-color: #760000;
+  padding: 15px 0;
+  border-bottom: 2px solid #333;
+}
+
+/* Title */
+.title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid #c70000;
+  border-radius: 5px;
+  padding: 8px 15px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: rgb(236, 0, 47);
+  color: #fff;
+  border-color: rgb(160, 0, 32);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .title {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .nav-links {
+    justify-content: center;
+  }
+
+  .nav-links a {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+  }
+}
+
+.card {
+  background-color: #000000;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Sidebar */
+.side-bar {
+  background-color: #000000;
+  border-left: 2px solid #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 10px;
+  }
+
+  .side-bar {
+    margin-top: 20px;
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;   
+  background-color: #930000;
+  color: #ccc;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+}

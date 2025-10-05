@@ -1,0 +1,31 @@
+body {
+  margin: 0;   
+  padding: 0;
+}
+
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.container a {
+   display: block;
+  padding: 8px 15px;
+  color: rgb(182, 182, 182);
+  text-decoration: none;
+  border: 2px solid rgb(88, 88, 88);
+  border-radius: 6px;
+  transition: all 0.3s; 
+}
+
+.container a:hover {
+    background-color: rgb(122, 0, 0);
+  color: #a8a8a8; 
+}
+
+.box {
+  background: rgb(128, 28, 28);
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #333;
+}

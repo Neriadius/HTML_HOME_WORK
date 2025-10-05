@@ -1,0 +1,88 @@
+/* Task 1 */
+
+body {
+  margin: 0;   
+  padding: 0;
+}
+
+h1, h2, p {
+  font-family: Arial, sans-serif;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  h1 { font-size: 20px; }
+  h2 { font-size: 18px; }
+  p  { font-size: 14px; }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+  h1 { font-size: 28px; }
+  h2 { font-size: 24px; }
+  p  { font-size: 18px; }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  h1 { font-size: 36px; }
+  h2 { font-size: 30px; }
+  p  { font-size: 20px; }
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.container a {
+   display: block;
+  padding: 8px 15px;
+  color: rgb(182, 182, 182);
+  text-decoration: none;
+  border: 2px solid rgb(88, 88, 88);
+  border-radius: 6px;
+  transition: all 0.3s; 
+}
+
+.container a:hover {
+    background-color: rgb(122, 0, 0);
+  color: #a8a8a8; 
+}
+
+.box {
+  flex: 1 1 100%;
+  min-width: 100px;
+  background: rgb(128, 28, 28);
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .box {
+    flex: 0 0 100%; 
+  }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .box {
+    flex: 0 0 50%;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .box {
+    flex: 0 0 25%; 
+  }
+}
+
+
+/* Task 2 */
+
+
