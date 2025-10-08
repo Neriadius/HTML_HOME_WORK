@@ -1,14 +1,147 @@
-.header {
-  grid-area: header;
-  display: flex;              
-  justify-content: space-between; 
-  align-items: center;        
-  padding: 10px 20px;
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #606060;
+    color: #e0e0e0;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .box {
+        flex: 0 0 100%; 
+    }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .box {
+    flex: 0 0 50%;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .box {
+    flex: 0 0 25%; 
+  }
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
   background-color: #606060;
+  color: #e0e0e0;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #363636;
   color: white;
 }
 
 .logo img {
-    width: 80px;
+  width: 65px;
   height: auto;
+}
+
+/* NAVIGATION */
+.nav-container {
+  width: 100%;
+  background-color: #7a7a7a;
+  box-sizing: border-box;
+}
+
+.nav-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.box {
+  text-align: center;
+  background-color: #3c3c3c;
+  border: 1px solid #3c3c3c;
+  height: 80px;
+}
+
+.box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 80px;
+}
+
+.box a:hover {
+  background-color: #1c1c1c;
+  color: #ffffff;
+}
+
+.home-liink {
+    background-color: #1c1c1c;
+}
+
+/* MAIN */
+.main-content {
+  min-height: calc(100vh - 240px); 
+  padding: 20px;
+}
+
+.card {
+  background: #717171;
+  border-radius: 8px;
+  width: auto;
+  padding: 15px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+}
+
+.top-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-card img {
+  width: 40%;
+  height: 40%;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border: 2px solid #000000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  background-color: #585858;
+  color: #ccc;
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid #333;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    font-size: 12px;
+    padding: 10px 0;
+  }
 }
