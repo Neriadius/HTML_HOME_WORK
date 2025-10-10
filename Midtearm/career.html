@@ -37,7 +37,90 @@
     </div>
     
     <main class="main-content">
+        <div class="career-container">
+            <div class="row">
+              
+              <div class="col-md-5">
+                <p>
+                  Welcome to Rhodes Island’s official recruitment platform.
+                  To ensure accurate assignment and evaluation, please complete the following registration form.
+                  Every field is mandatory.
+                </p>
+              </div>
         
+              <div class="col-md-7">
+                <h2>Recruitment Registration</h2>
+        
+                <form>
+                  <div class="row">
+                    <div class="col">
+                      <label for="name" class="form-label">First Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="col">
+                      <label for="lastname" class="form-label">Last Name</label>
+                      <input type="text" class="form-control" id="lastname" placeholder="Enter your lastname" required>
+                    </div>
+                  </div>
+        
+                  <div>
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                  </div>
+        
+                  <div>
+                    <label for="medical" class="form-label">Medical Record</label>
+                    <input type="file" class="form-control" id="medical" required>
+                  </div>
+        
+                  <div>
+                    <label for="crime" class="form-label">Criminal Record</label>
+                    <input type="file" class="form-control" id="crime" required>
+                  </div>
+        
+                  <div>
+                    <label for="war-crime" class="form-label">War Criminal Record</label>
+                    <input type="file" class="form-control" id="war-crime" required>
+                  </div>
+        
+                  <div>
+                    <label for="date" class="form-label">Date of Birth</label>
+                    <input type="date" class="form-control" id="date" required>
+                  </div>
+                  
+                  <div>
+                    <label for="role">Class</label>
+                    <select id="role" class="form-control">
+                        <option>Choose the class</option>
+                        <option>Caster</option>
+                        <option>Guard</option>
+                        <option>Defender</option>
+                        <option>Specialist</option>
+                        <option>Medic</option>
+                        <option>Sniper</option>
+                        <option>Supporter</option>
+                        <option>Vanguard</option>
+                    </select>
+                  </div>
+        
+                  <fieldset>
+                    <legend class="col-form-label">Gender</legend>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                      <label class="form-check-label" for="male">Male</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gender" id="female" value="female" required>
+                      <label class="form-check-label" for="female">Female</label>
+                    </div>
+                  </fieldset>
+        
+                  <button type="submit" class="btn btn-primary">Submit Application</button>
+                </form>
+              </div>
+        
+            </div>
+          <div>
     </main>
     
     <div class="footer">
