@@ -7,6 +7,11 @@ body {
   padding-left: 0;
   padding-right: 0;
   background-color: #7A7A7A;
+  gap: 10;
+}
+
+.container {
+  gap: 10 px;
 }
 
 .container a {

@@ -8,6 +8,15 @@ body {
     color: #e0e0e0;
 }
 
+* {
+  font-family: 'NuberNext';
+}
+
+@font-face {
+  font-family: 'NuberNext';
+  src: url('NuberNextCondensed-DemiBold-BF63c8a09b8a92e.otf');
+}
+
 /* Mobile */
 @media (max-width: 600px) {
     .box {
@@ -100,6 +109,7 @@ body {
 
 .card {
   background: #717171;
+  color: #ffffff;
   border-radius: 8px;
   width: auto;
   padding: 15px;
