@@ -31,94 +31,95 @@
         <form class="row g-3 needs-validation" novalidate>
 
             <div class="col-md-6">
-                <label for="name" class="form-label">Name</label>
-                <input 
-                    type="text" 
-                    class="form-control" 
-                    id="name" 
-                    placeholder="Enter your name" 
-                    required 
-                    maxlength="50">
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
-                <div class="invalid-feedback">
-                    Please enter your name.
-                </div>
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" id="firstName" class="form-control" placeholder="Enter first name" required maxlength="50">
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter your first name.</div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" id="lastName" class="form-control" placeholder="Enter last name" required maxlength="50">
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter your last name.</div>
             </div>
 
             <div class="col-md-6">
                 <label for="email" class="form-label">Email</label>
-                <input 
-                    type="email" 
-                    id="email" 
-                    class="form-control" 
-                    placeholder="Enter your email" 
-                    required>
+                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
                 <div class="form-text">We'll never share your email with anyone else.</div>
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
-                <div class="invalid-feedback">
-                    Please enter a valid email address.
-                </div>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
             </div>
 
             <div class="col-md-6">
                 <label for="password" class="form-label">Password</label>
-                <input 
-                    type="email" 
-                    id="email" 
-                    class="form-control" 
-                    placeholder="Enter your email" 
-                    required>
-                <div class="form-text">We'll never share your password with anyone else.</div>
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
-                <div class="invalid-feedback">
-                    Please enter a password.
-                </div>
+                <input type="password" id="password" class="form-control" placeholder="Enter password" required minlength="6">
+                <div class="form-text">Must be at least 6 characters long.</div>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter a valid password.</div>
             </div>
 
             <div class="col-md-6">
-                <label for="password" class="form-label">Password</label>
-                <input 
-                    type="email" 
-                    id="email" 
-                    class="form-control" 
-                    placeholder="Enter your email" 
-                    required>
-                <div class="form-text">Confirm your password.</div>
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
-                <div class="invalid-feedback">
-                    Please confirm your password.
-                </div>
+                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                <input type="password" id="confirmPassword" class="form-control" placeholder="Re-enter password" required>
+                <div class="valid-feedback">Passwords match!</div>
+                <div class="invalid-feedback">Passwords do not match.</div>
             </div>
 
-            <div class="col-12">
-                <label for="message" class="form-label">Message</label>
-                <textarea 
-                    id="message" 
-                    class="form-control" 
-                    placeholder="Your message (10–300 characters)" 
-                    minlength="10" 
-                    maxlength="300" 
-                    required></textarea>
-                <div class="valid-feedback">
-                    Looks good!
+            <fieldset class="col-md-6">
+                <legend class="col-form-label">Gender</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                    <label class="form-check-label" for="male">Male</label>
                 </div>
-                <div class="invalid-feedback">
-                    Please enter your message (at least 10 characters).
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="female" required>
+                    <label class="form-check-label" for="female">Female</label>
                 </div>
+                <div class="invalid-feedback">Please select a gender.</div>
+            </fieldset>
+
+            <fieldset class="col-12">
+                <legend class="col-form-label">Hobbies</legend>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="music" name="hobbies">
+                    <label class="form-check-label" for="music">Music</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="movies" name="hobbies">
+                    <label class="form-check-label" for="movies">Movies</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="reading" name="hobbies">
+                    <label class="form-check-label" for="reading">Reading</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="programming" name="hobbies">
+                    <label class="form-check-label" for="programming">Programming</label>
+                </div>
+            </fieldset>
+
+            <div class="col-md-6">
+                <label for="country" class="form-label">Country</label>
+                <select id="country" class="form-select" required>
+                    <option value="">Choose country</option>
+                    <option>Kazakhstan</option>
+                    <option>USA</option>
+                    <option>Russia</option>
+                    <option>China</option>
+                    <option>UK</option>
+                    <option>Forgotten Realms</option>
+                    <option>Ursus</option>
+                    <option>Victoria</option>
+                </select>
+                <div class="invalid-feedback">Please select your country.</div>
             </div>
 
-            <div class="col-12">
+            <div class="col-12 d-flex gap-2">
                 <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
             </div>
-
         </form>
     </div>
 
@@ -129,10 +130,19 @@
 
             Array.from(forms).forEach(form => {
                 form.addEventListener('submit', event => {
+                    const password = form.querySelector('#password');
+                    const confirm = form.querySelector('#confirmPassword');
+                    if (password.value !== confirm.value) {
+                        confirm.setCustomValidity("Passwords do not match");
+                    } else {
+                        confirm.setCustomValidity("");
+                    }
+
                     if (!form.checkValidity()) {
                         event.preventDefault()
                         event.stopPropagation()
                     }
+
                     form.classList.add('was-validated')
                 }, false)
             })
