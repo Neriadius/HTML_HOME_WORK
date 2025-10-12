@@ -8,21 +8,40 @@
 </head>
 
 <body>
-    <div class="base-form">
-        <div>
-            <label for="name" class="name-form">Name</label>
-            <input type="text" id="name" placeholder="Name" required> 
+    <header class="header">
+        <h1>Welcome to the form creating</h1>
+    </header>
+
+    <nav>
+        <div class="nav-row">
+            <div class="box">
+                <a href="task1.html">Task 1</a>
+            </div>
+            <div class="box">
+                <a href="task2.html">Task 2</a>
+            </div>
+            <div class="box">
+                <a href="task3.html">Task 3</a>
+            </div>
         </div>
-        <div>
-            <label for="email" class="email-form">Email</label>
-            <input type="email" id="email" placeholder="Email" required> 
+    </nav>
+    <form action="">
+        <div class="base-form">
+            <div>
+                <label for="name" class="label-form">Name</label>
+                <input type="text" class="control-form" id="name" placeholder="Name" required maxlength="50"> 
+            </div>
+            <div>
+                <label for="email" class="label-form">Email</label>
+                <input type="email" id="email" class="control-form" placeholder="Email" required> 
+            </div>
+            <div>
+                <label for="message" class="label-form">Message</label>
+                <textarea id="message" class="control-form" placeholder="Your message" minlength="10" maxlength="300"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </div>
-        <div>
-            <label for="message" class="message-form"></label>
-            <textarea id="message" class="message-form" placeholder="Your message"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
+    </form>
 </body>
 
 </html>
