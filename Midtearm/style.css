@@ -127,7 +127,6 @@ body {
   background-color: #2e2e2e; 
   border-radius: 12px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #e6e6e6;
 }
 
@@ -167,13 +166,6 @@ body {
   object-fit: contain;
   display: block;
   margin: 0 auto;
-  filter: grayscale(10%) brightness(0.9);
-  transition: transform 0.2s ease, filter 0.2s ease;
-}
-
-.op-class img:hover {
-  transform: scale(1.05);
-  filter: brightness(1);
 }
 
 .op-class th:nth-child(2) {
