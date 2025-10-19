@@ -1,0 +1,139 @@
+.body {
+    background-color: white;
+    height: 100%;
+    color: white;
+  margin: 0;
+  padding: 0;
+}
+*{
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(172, 0, 0);
+    color: white;
+}
+
+.nav-row {
+    display: grid;
+    background-color: rgb(54, 0, 11);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.box {
+    text-align: center;
+    background-color: rgb(95, 0, 0);
+    height: 80px;
+}
+
+.box a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    line-height: 80px;
+}
+
+.box a:hover {
+    background-color: rgb(58, 0, 0);
+    color: white;
+}
+
+
+.container img {
+    width: 65px;
+    height: auto;
+}
+
+.container h2 {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.new-task {
+  background-color: #3a3a3a;
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  color: white;
+}
+
+.new-task input {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #555;
+  background-color: #444;
+  color: #f5f5f5;
+  margin-bottom: 15px;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+
+.new-task button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: #5a5a5a;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.new-task button:hover {
+  background-color: #7a7a7a;
+  transform: translateY(-2px);
+}
+
+.unord-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.unord-list li {
+    background-color: #4a4a4a;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.task-buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.task-desc {
+    margin-top: 10px; 
+}
+
+.completed h3,
+.completed p {
+    text-decoration: line-through;
+    color: #ccc;
+}
