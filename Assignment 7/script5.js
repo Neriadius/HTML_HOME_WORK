@@ -1,0 +1,39 @@
+$(document).ready(function() {
+    console.log("jQuery is ready!");
+
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+        $("#panel2").slideUp("slow")
+        $("#panel3").slideUp("slow")
+        $("#panel4").slideUp("slow")
+        $("#panel5").slideUp("slow")
+    });
+    $("#flip2").click(function(){
+        $("#panel2").slideToggle("slow");
+        $("#panel").slideUp("slow")
+        $("#panel3").slideUp("slow")
+        $("#panel4").slideUp("slow")
+        $("#panel5").slideUp("slow")
+    });
+    $("#flip3").click(function(){
+        $("#panel3").slideToggle("slow");
+        $("#panel2").slideUp("slow")
+        $("#panel").slideUp("slow")
+        $("#panel4").slideUp("slow")
+        $("#panel5").slideUp("slow")
+    });
+    $("#flip4").click(function(){
+        $("#panel4").slideToggle("slow");
+        $("#panel2").slideUp("slow")
+        $("#panel3").slideUp("slow")
+        $("#panel").slideUp("slow")
+        $("#panel5").slideUp("slow")
+    });
+    $("#flip5").click(function(){
+        $("#panel5").slideToggle("slow");
+        $("#panel2").slideUp("slow")
+        $("#panel3").slideUp("slow")
+        $("#panel4").slideUp("slow")
+        $("#panel").slideUp("slow")
+    });
+});

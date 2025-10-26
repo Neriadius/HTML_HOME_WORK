@@ -34,6 +34,7 @@ function addNew() {
 }
 
 function removeTask(button) {
+    window.alert("Are you sure?")
     let li = button.closest("li");
     li.remove();
 }

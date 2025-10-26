@@ -19,7 +19,7 @@ let input = document.getElementById("textInput");
 let output = document.getElementById("output");
 
 input.addEventListener("keyup", function() {
-  output.textContent = "You typed: " + input.value;
+  output.innerHTML.textContent = "You typed: " + input.value;
 }
 );
 
@@ -50,6 +50,11 @@ function pressE() {
       case '/':
         result = num2 !== 0 ? num1 / num2 : "Error: division by zero";
         break;
+      case 'C':
+        document.getElementById("num1").innerHTML = "0";
+        num1 = 0;
+        document.getElementById("num2").innerHTML = "0";
+        num2 = 0;
       default:
         result = "Select operator";
     }
