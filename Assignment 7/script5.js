@@ -2,7 +2,7 @@ $(document).ready(function() {
     console.log("jQuery is ready!");
 
     $("#flip").click(function(){
-        $("#panel").slideToggle("slow");
+        $("#panel").slideToggle(20000);
         $("#panel2").slideUp("slow")
         $("#panel3").slideUp("slow")
         $("#panel4").slideUp("slow")
@@ -35,5 +35,9 @@ $(document).ready(function() {
         $("#panel3").slideUp("slow")
         $("#panel4").slideUp("slow")
         $("#panel").slideUp("slow")
+    });
+
+    $("button").click(function(){
+        $("#panel").stop();
     });
 });

@@ -21,6 +21,8 @@ $(document).ready(function() {
     $("#name").on("input", function() {
         let nameValue = $(this).val();
         $("#displayName").text(nameValue);
+        let bgColor = nameValue;
+        $(".header").css("background-color", "bgColor");
     });
     
     $("#email").on("input", function() {

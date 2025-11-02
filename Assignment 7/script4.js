@@ -15,6 +15,7 @@ $(document).ready(function() {
         anim.animate({up: '0px'}, "slow");
         anim.animate({width: '50px'}, "slow");
         anim.animate({height: '50px'}, "slow");
+        $("#box2").css("background-color", "red");
         anim.animate({left: '0px'}, "slow");
         anim.animate({up: '250px'}, "slow");
         anim.animate({width: '100px'}, "slow");
