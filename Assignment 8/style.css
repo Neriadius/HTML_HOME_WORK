@@ -1,11 +1,13 @@
-body {
-    width: 100%;
-    height: 100%;
+html, body {
     margin: 0;
     padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: #606060;
     color: #e0e0e0;
 }
+
 
 * {
   font-family: 'NuberNext';
@@ -40,7 +42,7 @@ body {
 /* HEADER */
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* space between logo+name and menu button */
   align-items: center;
   padding: 10px 20px;
   background-color: #363636;
@@ -52,17 +54,42 @@ body {
   height: auto;
 }
 
+.name h1 {
+  margin-left: 15px;
+  font-size: 24px;
+}
+
+#showBar {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#showBar.rotated {
+  transform: rotate(90deg);
+}
+
+/* menu button */
+.menu-button img {
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+}
+
 /* NAVIGATION */
 .nav-container {
   width: 100%;
   background-color: #7a7a7a;
   box-sizing: border-box;
+  display: none; /* initially hidden */
 }
 
 .nav-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  display: flex; /* align boxes in a row */
+  justify-content: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .box {
@@ -70,6 +97,7 @@ body {
   background-color: #3c3c3c;
   border: 1px solid #3c3c3c;
   height: 80px;
+  flex: 1 1 150px; /* responsive width */
 }
 
 .box a {
@@ -86,23 +114,23 @@ body {
   color: #ffffff;
 }
 
-.home-liink {
-    background-color: #1c1c1c;
+.home-link {
+  background-color: #1c1c1c;
 }
 
 /* MAIN */
 .main-content {
+  flex: 1;
   min-height: calc(100vh - 240px); 
   padding: 20px;
 }
 
 /* Home content */
 .home-content {
-  max-width: 900px;
-  margin: 80px auto;
+  max-width: 1200px;
+  margin: 10px auto;
   padding: 40px;
   background-color: rgba(47, 47, 47, 0.7);
-  border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
 }
 
@@ -179,11 +207,24 @@ body {
 /* Career */
 .career-container {
   max-width: 1200px;
-  margin: 50px auto;
+  margin: 10px auto;
   padding: 30px;
   background-color: #2e2e2e;
-  border-radius: 12px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.info-box {
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #5e5e5e;
+}
+
+.reg-box {
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #464646;
 }
 
 .career-container p {
@@ -206,7 +247,6 @@ body {
 }
 
 .career-container .form-control {
-  border-radius: 8px;
   padding: 10px;
   border: 1px solid #555;
   background-color: #3a3a3a;
@@ -280,20 +320,23 @@ body {
 
 /* Contact Section */
 .contact-section {
-  background-color: #2f2f2f;
-  border-radius: 12px;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  max-width: 1200px;
+  margin: 10px auto;
   padding: 40px 20px;
+  background-color: #2f2f2f;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .con-con,
 .info-con,
 .form-con {
-  background-color: #2e2e2e;
+  background-color: #575757;
   border-radius: 12px;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
   padding: 30px;
-  height: 100%;
+  margin-top: 10px;
 }
 
 .contact-section h2,
@@ -303,17 +346,11 @@ body {
   margin-bottom: 20px;
 }
 
-.contact-section p {
-  line-height: 1.7;
+.contact-section p,
+.contact-section li,
+.contact-section a {
   color: #dcdcdc;
-}
-
-.contact-section ul {
-  margin-top: 15px;
-}
-
-.contact-section li {
-  margin-bottom: 10px;
+  line-height: 1.7;
 }
 
 .contact-section a {
@@ -326,44 +363,53 @@ body {
   color: #ffffff;
 }
 
-.contact-section .form-control {
-  background-color: #3a3a3a;
-  border: 1px solid #555;
-  color: #f0f0f0;
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
   border-radius: 8px;
   padding: 10px;
+  border: 1px solid #555;
+  background-color: #3a3a3a;
+  color: #f0f0f0;
   transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
-.contact-section .form-control:focus {
+.form-control:focus {
   background-color: #424242;
   border-color: #888;
   box-shadow: 0 0 0 0.2rem rgba(180, 180, 180, 0.25);
 }
 
-.contact-section .btn {
-  background-color: #555;
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: #303030;
   color: #fff;
   border: none;
-  border-radius: 8px;
-  font-weight: 600;
   transition: background-color 0.3s ease;
 }
 
-.contact-section .btn:hover {
+.btn:hover {
   background-color: #7a7a7a;
 }
 
-/* FOOTER */
+
+/* Footer */
 .footer {
-  width: 100%;
-  background-color: #585858;
-  color: #ccc;
-  text-align: center;
-  padding: 15px 0;
-  border-top: 1px solid #333;
-  font-size: 14px;
-  margin-top: 20px;
+    width: 100%;
+    background-color: #585858;
+    color: #ccc;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #333;
+    font-size: 14px;
+    margin-top: 20px;
 }
 
 @media (max-width: 768px) {

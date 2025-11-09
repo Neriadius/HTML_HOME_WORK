@@ -7,104 +7,278 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="Rhodes_Island.png" alt="RI.png">
-        </div>
-        <div class="name">
-            <h1>    Rhodes Island   </h1>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="Rhodes_Island.png" alt="RI.png">
+            </div>
+            <div class="name">
+                <h1>Rhodes Island</h1>
+            </div>
+            <div class="menu-button">
+                <img src="nav-bar.png" id="showBar" alt="Menu">
+            </div>
         </div>
     </header>
     
     <div class="nav-container">
         <div class="nav-row">
             <div class="box">
-                <a href="home.html">    Home    </a>
+                <a href="home.html" class="home-link">Home</a>
             </div>
             <div class="box">
-                <a href="about.html" class="home-link">   About Us    </a>
+                <a href="">About Us</a>
             </div>
             <div class="box">
-                <a href="career.html">  Career    </a>
+                <a href="career.html">Career</a>
             </div>
             <div class="box">
-                <a href="operators.html">   Operators  </a>
+                <a href="operators.html">Operators</a>
             </div>
             <div class="box">
-                <a href="contact.html">     Contact </a>
+                <a href="contact.html">Contact</a>
             </div>
         </div>
     </div>
     
     <main class="main-content">
-        <div class="about-us">
-            <p>
-                About Us
-                Rhodes Island Pharmaceuticals Inc. is a pharmaceutical company operating in the world. We specialize in developing and producing medicines to treat Oripathy, as well as providing support and rehabilitation for infected individuals.
-                The Human Resources Department plays a key role in our organization, ensuring efficient personnel management, recruitment and training of Operators, and supporting their well-being and professional growth.
-            </p>
+        <div class="home-content">
+            <div class="about-us">
+                <p>
+                    About Us
+                    Rhodes Island Pharmaceuticals Inc. is a pharmaceutical company operating in the world. We specialize in developing and producing medicines to treat Oripathy, as well as providing support and rehabilitation for infected individuals.
+                    The Human Resources Department plays a key role in our organization, ensuring efficient personnel management, recruitment and training of Operators, and supporting their well-being and professional growth.
+                </p>
+            </div>
+            <div class="op-class">
+                <table>
+                    <tr>
+                        <th>Operator Class</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <img src="Caster.png" class="flip" id="flip">
+                        </th>
+                        <th>Caster: Users of Arts who inflict devastating magical damage, particularly effective against heavily armored targets. Casters trade durability for immense offensive power.</th>
+                    </tr>
+                     <tr class="panel" id="panel">
+                        <td colspan="2">
+                            <table class="op-subclass">
+                                <tr>
+                                    <th>
+                                        <img src="Core_Caster.webp">
+                                    </th>
+                                    <th>
+                                        Core
+Deals Arts damage
+Single-target ranged Arts attacker
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img src="Splash_Caster.webp">
+                                    </th>
+                                    <th>
+                                        Splash
+Deals AOE Arts damage
+Ranged Arts attacker that deals area-of-effect/splash damage
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img src="Blast_Caster.webp">
+                                    </th>
+                                    <th>
+                                        	
+Blast
+Deals AOE Arts damage in a long line
+Ranged Arts attacker that hits all targets in a linear range
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img src="Chain_Caster.webp">
+                                    </th>
+                                    <th>
+                                        Chain
+Attacks deal Arts damage and jump between 3/4 enemies. Each jump deals 15% less damage and inflicts a brief Slow
+Single-target ranged Arts attacker whose attack jumps between multiple targets (3 base, 4 Elite 2) with a 15% damage penalty in each jump and Slows them
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img src="Mech-Accord_Caster.webp">
+                                    </th>
+                                    <th>
+                                        Mech-Accord
+Controls a Drone to deal Arts damage to an enemy; When the Drone continuously attacks the same enemy, its damage will increase (up to 110% of the operator's ATK)
+Single-target ranged Arts attacker with a Drone that attacks in tandem with the Mech-Accord which deals low damage that increases on subsequent attacks against one target
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img src="Phalanx_Caster.webp">
+                                    </th>
+                                    <th>
+                                        Phalanx
+Normally does not attack, but has greatly increased DEF and RES; When skill is active, attacks deal AoE Arts damage
+Area-of-effect Arts attacker that only attacks during skill activations, dealing Arts damage to all targets in range, and has increased defenses outside of skill activations
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img src="Mystic_Caster.webp">
+                                    </th>
+                                    <th>
+                                        Mystic
+Attacks deal Arts damage; When unable to find a target, attacks can be stored up and fired all at once (Up to 3 charges)
+Powerful single-target ranged Arts attacker that can "build up" attack charges when no enemies are in range to be released on the next attack
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img src="Primal_Caster.webp">
+                                    </th>
+                                    <th>
+                                        Attacks deal Arts damage, and can inflict Elemental damage
+Single-target ranged Arts attacker capable of inflicting Elemental damage on enemies
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img src="Shaper_Caster.webp">
+                                    </th>
+                                    <th>
+                                       Deals Arts Damage; Can create Summons by defeating enemies, and can attack enemies blocked by these Summons
+Single-target ranged Arts attacker that obtains a summon when an enemy is defeated in range 
+                                    </th>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <img src="Defender.png">
+                        </th>
+                        <th>Defender: Specialized in protection and endurance. Defenders absorb enemy attacks, hold choke points, and ensure the safety of Operators positioned behind them.</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <img src="Guard.png">
+                        </th>
+                        <th>Guard: Versatile melee combatants capable of both offense and defense. Guards adapt to various situations, balancing survivability with high damage output.</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <img src="Medic.png">
+                        </th>
+                        <th>Medic: Essential support Operators tasked with sustaining squad endurance. Medics restore HP, stabilize injured Operators, and ensure mission continuity.</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <img src="Sniper.png">
+                        </th>
+                        <th>Sniper: Long-range attackers focused on eliminating aerial units and priority threats. Snipers excel at precision and consistent ranged damage.</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <img src="Specialist.webp">
+                        </th>
+                        <th>Specialist: Unique Operators with unconventional tactics. Specialists employ displacement, assassination, or area denial strategies to disrupt enemy formations.</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <img src="Supporter.png">
+                        </th>
+                        <th>Supporter: Specialists in tactical enhancement. Supporters provide buffs, debuffs, or summon units to manipulate the battlefield in favor of Rhodes Island.</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <img src="Vanguard.png">
+                        </th>
+                        <th>Vanguard Responsible for establishing the frontline and securing initial deployment points. Vanguards are often the first to enter the battlefield, providing momentum and stability for the squad.</th>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <div class="op-class">
-            <table>
-                <tr>
-                    <th>Operator Class</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <th>
-                        <img src="Caster.png">
-                    </th>
-                    <th>Caster: Users of Arts who inflict devastating magical damage, particularly effective against heavily armored targets. Casters trade durability for immense offensive power.</th>
-                </tr>
-                <tr>
-                    <th>
-                        <img src="Defender.png">
-                    </th>
-                    <th>Defender: Specialized in protection and endurance. Defenders absorb enemy attacks, hold choke points, and ensure the safety of Operators positioned behind them.</th>
-                </tr>
-                <tr>
-                    <th>
-                        <img src="Guard.png">
-                    </th>
-                    <th>Guard: Versatile melee combatants capable of both offense and defense. Guards adapt to various situations, balancing survivability with high damage output.</th>
-                </tr>
-                <tr>
-                    <th>
-                        <img src="Medic.png">
-                    </th>
-                    <th>Medic: Essential support Operators tasked with sustaining squad endurance. Medics restore HP, stabilize injured Operators, and ensure mission continuity.</th>
-                </tr>
-                <tr>
-                    <th>
-                        <img src="Sniper.png">
-                    </th>
-                    <th>Sniper: Long-range attackers focused on eliminating aerial units and priority threats. Snipers excel at precision and consistent ranged damage.</th>
-                </tr>
-                <tr>
-                    <th>
-                        <img src="Specialist.webp">
-                    </th>
-                    <th>Specialist: Unique Operators with unconventional tactics. Specialists employ displacement, assassination, or area denial strategies to disrupt enemy formations.</th>
-                </tr>
-                <tr>
-                    <th>
-                        <img src="Supporter.png">
-                    </th>
-                    <th>Supporter: Specialists in tactical enhancement. Supporters provide buffs, debuffs, or summon units to manipulate the battlefield in favor of Rhodes Island.</th>
-                </tr>
-                <tr>
-                    <th>
-                        <img src="Vanguard.png">
-                    </th>
-                    <th>Vanguard Responsible for establishing the frontline and securing initial deployment points. Vanguards are often the first to enter the battlefield, providing momentum and stability for the squad.</th>
-                </tr>
-            </table>
-        </div>
+
+        <tr class="panel" style="display: none;">
+                        <td colspan="2">
+                            <table class="op-subclass">
+                                <tr>
+                                    <th>
+                                        <img src="">
+                                    </th>
+                                    <th>
+                                        
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img src="">
+                                    </th>
+                                    <th>
+                                        
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img src="">
+                                    </th>
+                                    <th>
+                                        
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img src="">
+                                    </th>
+                                    <th>
+                                        
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img src="">
+                                    </th>
+                                    <th>
+                                        
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img src="">
+                                    </th>
+                                    <th>
+                                        
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img src="">
+                                    </th>
+                                    <th>
+                                        
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img src="">
+                                    </th>
+                                    <th>
+                                        
+                                    </th>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
     </main>
-    
-    <div class="footer">
+
+    <footer class="footer">
         © 2025 Rhodes Island HR Department. All rights reserved.  
-    </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="script1.js"></script>
