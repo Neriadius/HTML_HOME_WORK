@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $("#showBar").click(function(){
-        $(".nav-container").slideToggle(); // smooth toggle animation
+        $(".nav-container").slideToggle();
          $(this).toggleClass("rotated");
     });
 });
