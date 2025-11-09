@@ -43,243 +43,381 @@
     
     <main class="main-content">
         <div class="home-content">
-            <div class="about-us">
-                <p>
-                    About Us
-                    Rhodes Island Pharmaceuticals Inc. is a pharmaceutical company operating in the world. We specialize in developing and producing medicines to treat Oripathy, as well as providing support and rehabilitation for infected individuals.
-                    The Human Resources Department plays a key role in our organization, ensuring efficient personnel management, recruitment and training of Operators, and supporting their well-being and professional growth.
-                </p>
+            <div class="accor-container">
+            <p>
+                About Us
+                Rhodes Island Pharmaceuticals Inc. is a pharmaceutical company operating in the world...
+            </p>
+        
+            <!-- Caster -->
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img src="Caster.png" class="flip" id="flip1">
+                </div>
+                <div class="col-12 col-md-6">
+                    <p>Caster: Users of Arts who inflict devastating magical damage...</p>
+                </div>
             </div>
-            <div class="op-class">
-                <table>
+            <div id="panel1" style="display: none;">
+                <table class="op-class">
                     <tr>
-                        <th>Operator Class</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <th>
-                            <img src="Caster.png" class="flip" id="flip">
+                        <th><img src="Core_Caster.webp"></th>
+                        <th>Core
+                            Deals Arts damage
+                            Single-target ranged Arts attacker
                         </th>
-                        <th>Caster: Users of Arts who inflict devastating magical damage, particularly effective against heavily armored targets. Casters trade durability for immense offensive power.</th>
-                    </tr>
-                     <tr class="panel" id="panel">
-                        <td colspan="2">
-                            <table class="op-subclass">
-                                <tr>
-                                    <th>
-                                        <img src="Core_Caster.webp">
-                                    </th>
-                                    <th>
-                                        Core
-Deals Arts damage
-Single-target ranged Arts attacker
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <img src="Splash_Caster.webp">
-                                    </th>
-                                    <th>
-                                        Splash
-Deals AOE Arts damage
-Ranged Arts attacker that deals area-of-effect/splash damage
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <img src="Blast_Caster.webp">
-                                    </th>
-                                    <th>
-                                        	
-Blast
-Deals AOE Arts damage in a long line
-Ranged Arts attacker that hits all targets in a linear range
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <img src="Chain_Caster.webp">
-                                    </th>
-                                    <th>
-                                        Chain
-Attacks deal Arts damage and jump between 3/4 enemies. Each jump deals 15% less damage and inflicts a brief Slow
-Single-target ranged Arts attacker whose attack jumps between multiple targets (3 base, 4 Elite 2) with a 15% damage penalty in each jump and Slows them
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <img src="Mech-Accord_Caster.webp">
-                                    </th>
-                                    <th>
-                                        Mech-Accord
-Controls a Drone to deal Arts damage to an enemy; When the Drone continuously attacks the same enemy, its damage will increase (up to 110% of the operator's ATK)
-Single-target ranged Arts attacker with a Drone that attacks in tandem with the Mech-Accord which deals low damage that increases on subsequent attacks against one target
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <img src="Phalanx_Caster.webp">
-                                    </th>
-                                    <th>
-                                        Phalanx
-Normally does not attack, but has greatly increased DEF and RES; When skill is active, attacks deal AoE Arts damage
-Area-of-effect Arts attacker that only attacks during skill activations, dealing Arts damage to all targets in range, and has increased defenses outside of skill activations
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <img src="Mystic_Caster.webp">
-                                    </th>
-                                    <th>
-                                        Mystic
-Attacks deal Arts damage; When unable to find a target, attacks can be stored up and fired all at once (Up to 3 charges)
-Powerful single-target ranged Arts attacker that can "build up" attack charges when no enemies are in range to be released on the next attack
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <img src="Primal_Caster.webp">
-                                    </th>
-                                    <th>
-                                        Attacks deal Arts damage, and can inflict Elemental damage
-Single-target ranged Arts attacker capable of inflicting Elemental damage on enemies
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <img src="Shaper_Caster.webp">
-                                    </th>
-                                    <th>
-                                       Deals Arts Damage; Can create Summons by defeating enemies, and can attack enemies blocked by these Summons
-Single-target ranged Arts attacker that obtains a summon when an enemy is defeated in range 
-                                    </th>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <th>
-                            <img src="Defender.png">
-                        </th>
-                        <th>Defender: Specialized in protection and endurance. Defenders absorb enemy attacks, hold choke points, and ensure the safety of Operators positioned behind them.</th>
                     </tr>
                     <tr>
-                        <th>
-                            <img src="Guard.png">
+                        <th><img src="Splash_Caster.webp"></th>
+                        <th>Splash
+                            Deals AOE Arts damage
+                            Ranged Arts attacker that deals area-of-effect/splash damage
                         </th>
-                        <th>Guard: Versatile melee combatants capable of both offense and defense. Guards adapt to various situations, balancing survivability with high damage output.</th>
                     </tr>
                     <tr>
-                        <th>
-                            <img src="Medic.png">
+                        <th><img src="Blast_Caster.webp"></th>
+                        <th>Blast
+                            Deals AOE Arts damage in a long line
+                            Ranged Arts attacker that hits all targets in a linear range
                         </th>
-                        <th>Medic: Essential support Operators tasked with sustaining squad endurance. Medics restore HP, stabilize injured Operators, and ensure mission continuity.</th>
                     </tr>
                     <tr>
-                        <th>
-                            <img src="Sniper.png">
+                        <th><img src="Chain_Caster.webp"></th>
+                        <th>Chain
+                            Attacks deal Arts damage and jump between 3/4 enemies. Each jump deals 15% less damage and inflicts a brief Slow
+                            Single-target ranged Arts attacker whose attack jumps between multiple targets (3 base, 4 Elite 2) with a 15% damage penalty in each jump and Slows them
                         </th>
-                        <th>Sniper: Long-range attackers focused on eliminating aerial units and priority threats. Snipers excel at precision and consistent ranged damage.</th>
                     </tr>
                     <tr>
-                        <th>
-                            <img src="Specialist.webp">
+                        <th><img src="Mech-Accord_Caster.webp"></th>
+                        <th>Mech-Accord
+                            Controls a Drone to deal Arts damage to an enemy; When the Drone continuously attacks the same enemy, its damage will increase (up to 110% of the operator's ATK)
+                            Single-target ranged Arts attacker with a Drone that attacks in tandem with the Mech-Accord which deals low damage that increases on subsequent attacks against one target
                         </th>
-                        <th>Specialist: Unique Operators with unconventional tactics. Specialists employ displacement, assassination, or area denial strategies to disrupt enemy formations.</th>
                     </tr>
                     <tr>
-                        <th>
-                            <img src="Supporter.png">
+                        <th><img src="Phalanx_Caster.webp"></th>
+                        <th>Phalanx
+                            Normally does not attack, but has greatly increased DEF and RES; When skill is active, attacks deal AoE Arts damage
+                            Area-of-effect Arts attacker that only attacks during skill activations, dealing Arts damage to all targets in range, and has increased defenses outside of skill activations
                         </th>
-                        <th>Supporter: Specialists in tactical enhancement. Supporters provide buffs, debuffs, or summon units to manipulate the battlefield in favor of Rhodes Island.</th>
                     </tr>
                     <tr>
-                        <th>
-                            <img src="Vanguard.png">
+                        <th><img src="Mystic_Caster.webp"></th>
+                        <th>Mystic
+                            Attacks deal Arts damage; When unable to find a target, attacks can be stored up and fired all at once (Up to 3 charges)
+                            Powerful single-target ranged Arts attacker that can "build up" attack charges when no enemies are in range to be released on the next attack
                         </th>
-                        <th>Vanguard Responsible for establishing the frontline and securing initial deployment points. Vanguards are often the first to enter the battlefield, providing momentum and stability for the squad.</th>
+                    </tr>
+                    <tr>
+                        <th><img src="Primal_Caster.webp"></th>
+                        <th>Primal
+                            Attacks deal Arts damage, and can inflict Elemental damage
+                            Single-target ranged Arts attacker capable of inflicting Elemental damage on enemies
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><img src="Shaper_Caster.webp"></th>
+                        <th>Shaper
+                            Deals Arts Damage; Can create Summons by defeating enemies, and can attack enemies blocked by these Summons
+                            Single-target ranged Arts attacker that obtains a summon when an enemy is defeated in range 
+                        </th>
                     </tr>
                 </table>
             </div>
-        </div>
-
-        <tr class="panel" style="display: none;">
-                        <td colspan="2">
-                            <table class="op-subclass">
-                                <tr>
-                                    <th>
-                                        <img src="">
-                                    </th>
-                                    <th>
-                                        
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <img src="">
-                                    </th>
-                                    <th>
-                                        
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <img src="">
-                                    </th>
-                                    <th>
-                                        
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <img src="">
-                                    </th>
-                                    <th>
-                                        
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <img src="">
-                                    </th>
-                                    <th>
-                                        
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <img src="">
-                                    </th>
-                                    <th>
-                                        
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <img src="">
-                                    </th>
-                                    <th>
-                                        
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <img src="">
-                                    </th>
-                                    <th>
-                                        
-                                    </th>
-                                </tr>
-                            </table>
-                        </td>
+        
+            
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img src="Defender.png" class="flip" id="flip2">
+                </div>
+                <div class="col-12 col-md-6">
+                    <p>Defender: Specialized in protection and endurance...</p>
+                </div>
+            </div>
+            <div id="panel2" style="display: none;">
+                <table class="op-class">
+                                        <tr>
+                                            <th>
+                                                <img src="Protector_Defender.webp">
+                                            </th>
+                                            <th>
+                                                Nothing special
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <img src="Guardian_Defender.webp">
+                                            </th>
+                                            <th>
+                                                Can heal friendly units with skills
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <img src="Juggernaut_Defender.webp">
+                                            </th>
+                                            <th>
+                                                Cannot be actively healed by friendlies but can heal themselves through skills and/or talents
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <img src="Arts_Protector_Defender.webp">
+                                            </th>
+                                            <th>
+                                                Attack deals Arts damage while the skill is active
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <img src="Duelist_Defender.webp">
+                                            </th>
+                                            <th>
+                                                Can only block one enemy and only recover/restore SP while blocking an enemy
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <img src="Fortress_Defender.webp">
+                                            </th>
+                                            <th>
+                                                Uses a ranged attack with minimum range that deals area-of-effect damage while not blocking enemies
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <img src="Sentry_Protector_Defender.webp">
+                                            </th>
+                                            <th>
+                                                Uses a ranged attack with a range of two tiles ahead that can target aerial enemies
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <img src="Primal_Protector_Defender.webp">
+                                            </th>
+                                            <th>
+                                               Inflicts and takes reduced Elemental Injury through skills and/or talents 
+                                            </th>
+                                        </tr>
+                                    </table>
+            </div>
+        
+        
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img src="Guard.png" class="flip" id="flip3">
+                </div>
+                <div class="col-12 col-md-6">
+                    <p>Guard: Master of dps</p>
+                </div>
+            </div>
+            <div id="panel3" style="display: none;">
+                <table class="op-class">
+                                        <tr>
+                                            <th>
+                                                <img src="Dreadnought_Guard.webp">
+                                            </th>
+                                            <th>
+                                                Nothing special
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <img src="Centurion_Guard.webp">
+                                            </th>
+                                            <th>
+                                                Attacks hit multiple targets equal to block count
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <img src="Lord_Guard.webp">
+                                            </th>
+                                            <th>
+                                                Has a ranged attack that deals 0.8× damage, which is used while not blocking enemies
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <img src="Arts_Fighter_Guard.webp">
+                                            </th>
+                                            <th>
+                                                Attacks deal Arts damage
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <img src="Instructor_Guard.webp">
+                                            </th>
+                                            <th>
+                                                Has a range of two tiles ahead and attacks deal 1.2× damage against enemies not blocked by self; supports friendlies with skills
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <img src="Fighter_Guard.webp">
+                                            </th>
+                                            <th>
+                                                Has a very low attack interval
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <img src="Swordmaster_Guard.webp">
+                                            </th>
+                                            <th>
+                                                Attacks deal two consecutive hits (but are still considered as one attack)
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <img src="Soloblade_Guard.webp">
+                                            </th>
+                                            <th>
+                                                Cannot be actively healed by friendlies and restores slight HP in each attack
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <img src="Liberator_Guard.webp">
+                                            </th>
+                                            <th>
+                                                Only attack and block enemies when the skill is active, and have increased ATK over time when the skill is not active (up to a limit and will be lost when the skill expires upon activation); has a range of the frontal and side tiles
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <img src="Reaper_Guard.webp">
+                                            </th>
+                                            <th>
+                                                Attacks hit all enemies within a vertical range of three tiles ahead, cannot be actively healed by friendlies, and restores slight HP for every enemy hit in each attack up to the block count
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <img src="Crusher_Guard.webp">
+                                            </th>
+                                            <th>
+                                                Attacks hit multiple targets equal to block count and have extremely high HP and ATK, but have no defenses whatsoever and a high attack interval
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <img src="Earthshaker_Guard.webp">
+                                            </th>
+                                            <th>
+                                                Attacks deal half-strength splash damage affecting enemies near the main target
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <img src="Primal_Guard.webp">
+                                            </th>
+                                            <th>
+                                                Can deal Elemental damage against enemies being affected by the burst effect of Elemental Injury
+                                            </th>
+                                        </tr>
+                                    </table>
+            </div>
+        
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img src="Medic.png" class="flip" id="flip4">
+                </div>
+                <div class="col-12 col-md-6">
+                    <p>Defender: Specialized in protection and endurance...</p>
+                </div>
+            </div>
+            <div id="panel4" style="display: none;">
+                <table class="op-class">
+                    <tr>
+                        <th><img src="Defender_Subclass1.png"></th>
+                        <th>Subclass 1 description</th>
                     </tr>
+                </table>
+            </div>
+        
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img src="Sniper.png" class="flip" id="flip5">
+                </div>
+                <div class="col-12 col-md-6">
+                    <p>Defender: Specialized in protection and endurance...</p>
+                </div>
+            </div>
+            <div id="panel5" style="display: none;">
+                <table class="op-class">
+                    <tr>
+                        <th><img src="Defender_Subclass1.png"></th>
+                        <th>Subclass 1 description</th>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img src="Specialist.webp" class="flip" id="flip6">
+                </div>
+                <div class="col-12 col-md-6">
+                    <p>Defender: Specialized in protection and endurance...</p>
+                </div>
+            </div>
+            <div id="panel6" style="display: none;">
+                <table class="op-class">
+                    <tr>
+                        <th><img src="Defender_Subclass1.png"></th>
+                        <th>Subclass 1 description</th>
+                    </tr>
+                </table>
+            </div>
+        
+            
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img src="Supporter.png" class="flip" id="flip7">
+                </div>
+                <div class="col-12 col-md-6">
+                    <p>Defender: Specialized in protection and endurance...</p>
+                </div>
+            </div>
+            <div id="panel7" style="display: none;">
+                <table class="op-class">
+                    <tr>
+                        <th><img src="Defender_Subclass1.png"></th>
+                        <th>Subclass 1 description</th>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img src="Vanguard.png" class="flip" id="flip8">
+                </div>
+                <div class="col-12 col-md-6">
+                    <p>Defender: Specialized in protection and endurance...</p>
+                </div>
+            </div>
+            <div id="panel8" style="display: none;">
+                <table class="op-class">
+                    <tr>
+                        <th><img src="Defender_Subclass1.png"></th>
+                        <th>Subclass 1 description</th>
+                    </tr>
+                </table>
+            </div>
+        
+        </div>
+        </div>
     </main>
 
-    <footer class="footer">
-        © 2025 Rhodes Island HR Department. All rights reserved.  
-    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="script1.js"></script>
-</body>
+               
+        <footer class="footer">
+            © 2025 Rhodes Island HR Department. All rights reserved.  
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="script1.js"></script>
+    </body>
