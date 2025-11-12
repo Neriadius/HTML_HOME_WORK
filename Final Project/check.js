@@ -5,9 +5,8 @@ $(document).ready(function(){
         const resultDiv = document.getElementById('result');
     
         form.addEventListener('submit', async (e) => {
-            e.preventDefault(); // Отключаем стандартную отправку формы
-    
-            // Расширенная валидация
+            e.preventDefault();
+
             let isValid = form.checkValidity();
     
             const password = form.querySelector('#password');
@@ -30,8 +29,6 @@ $(document).ready(function(){
             form.classList.add('was-validated');
     
             if (!isValid) return;
-    
-            // Подготовка данных для отправки
             const data = {
                 firstName: form.firstName.value,
                 lastName: form.lastName.value,
@@ -43,7 +40,6 @@ $(document).ready(function(){
             };
     
             try {
-                // Отправка данных через fetch
                 const response = await fetch('https://jsonplaceholder.typicode.com/posts', { 
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
@@ -51,7 +47,6 @@ $(document).ready(function(){
                 });
                 const result = await response.json();
     
-                // Отображение результата на странице
                 resultDiv.innerHTML = `<div class="alert alert-success">Form submitted successfully! Received ID: ${result.id}</div>`;
                 form.reset();
                 form.classList.remove('was-validated');
